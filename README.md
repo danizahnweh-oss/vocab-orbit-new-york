@@ -1,27 +1,32 @@
 # Vocab Orbit: Mission New York
 
-Interaktives Vokabelspiel mit 86 Haupteinträgen aus den bereitgestellten Vokabelseiten 184–189 (Topic 1). Die Übungssätze wurden für dieses Spiel neu formuliert. Die zusätzlichen Präpositions- und Wortfamilienübungen gehören nicht zum Wortpool.
+An offline-capable, English-language vocabulary space game with 86 main entries from the supplied textbook pages 184–189. Practice sentences were written specifically for the game. German remains part of the translation exercises.
 
-## Spielen
+## Play
 
 https://danizahnweh-oss.github.io/vocab-orbit-new-york/
 
-Alternativ `index.html` herunterladen und im Browser öffnen. Keine Installation, keine Anmeldung und kein Internet erforderlich. Es werden keine personenbezogenen Daten erfasst. Der Spielstand bleibt nur während der geöffneten Sitzung erhalten.
+Or download `index.html` and open it in a browser. No installation, account or internet connection required. Progress lasts only for the current session.
 
-1. Themenbereich und Aufgabenzahl wählen. Der Aufgabentyp wird bei jeder Frage unabhängig zufällig gewählt, auch bei der Fehlerwiederholung.
-2. Mission starten und die richtige Antwort anklicken oder antippen.
-3. Mit den Pfeiltasten zielen und mit der Leertaste schießen. Die Tasten 1–4 schießen direkt auf eine Antwort.
-4. Nach jeder Antwort die Rückmeldung lesen und auf „Next“ klicken.
-5. Am Ende lassen sich falsch beantwortete Vokabeln gezielt wiederholen.
+Choose a topic and mission length. Every question independently selects a random task type: German to English, English to German, or an English gap-fill sentence, each with equal probability. Consecutive tasks may have the same type. Mistake practice also uses random task types.
 
-Ohne Zeitlimit. Je richtige Antwort 100 Punkte plus Serienbonus (20 pro weiterem Treffer, bis maximal 100 Bonuspunkte). Ein Fehler setzt nur die Serie zurück. Keine Leben und kein Ausscheiden.
+## Flight controls
 
-## Bearbeiten
+- Left/right arrows or A/D: rotate the ship.
+- Up arrow or W: thrust. Momentum carries the ship forward.
+- Down arrow or S: brake.
+- Space: fire. Shots must physically hit an answer asteroid.
+- P: pause or resume. Switching away automatically pauses flight.
+- Touchscreens: hold the flight buttons and tap Fire.
 
-`vocabulary.tsv` enthält Themen, Übersetzungen und Übungssätze. `index.template.html` enthält das Spiel. Nach Änderungen `python3 build.py` ausführen. GitHub Pages veröffentlicht den Hauptzweig.
+The ship wraps around the screen edges. Asteroids drift and rotate within separate regions so their labels stay readable. There is no time limit or loss of lives. Read the feedback after a hit, then select Next. The answer-button alternative allows play without flying. Mistakes can be practised again at the end.
 
-## Geprüft
+Each correct answer earns 100 points plus a streak bonus of 20 per consecutive additional hit, capped at 100 bonus points. Mistakes reset the streak. Reduced-motion settings disable asteroid rotation and hit particles; flight itself remains interactive.
 
-Alle 86 Fragen in allen vier Modi, Tastatursteuerung, vorzeitiges Beenden, Fehlerwiederholung, Themenauswahl sowie Bildschirmbreiten von 390, 768 und 1440 Pixeln mit automatisierten Chromium-Browsertests. Zusätzlich visuelle Kontrolle der Start-, Spiel- und Mobilansicht. Reduzierte Bewegung wird respektiert.
+## Edit
 
-Die gesamte Spieloberfläche ist auf Englisch. Deutsche Vokabeln bleiben als Lerninhalt erhalten. Jeder Aufgabentyp hat pro Frage dieselbe Wahrscheinlichkeit; aufeinanderfolgende gleiche Typen sind möglich.
+`vocabulary.tsv` contains the words, translations and sentences. `index.template.html` contains the application. Run `python3 build.py` after changes to regenerate the standalone `index.html`. GitHub Pages publishes the main branch.
+
+## Validation
+
+Browser checks cover English interface labels, all three random type selections, actual thrust and rotation, pause/resume, projectile collision scoring, mistake practice, accessible answer buttons and mobile layout. Desktop and mobile screenshots were visually inspected.
