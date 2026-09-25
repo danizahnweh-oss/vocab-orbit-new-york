@@ -20,7 +20,7 @@ Choose a topic and mission length. Every question independently selects a random
 - Touchscreens: drag the virtual joystick in any direction; push further for more thrust. Release to brake. Hold Fire with the other thumb to keep shooting. The original flight buttons are also available.
 - The joystick resets on release, touch cancellation, pause, resize, a hit and the next question.
 
-The ship wraps around the screen edges. Asteroids drift and rotate within six separate regions so their labels stay readable. There is no time limit or loss of lives. Each question has six answer asteroids. A correct hit shows feedback for 1.5 seconds, then automatically advances (or opens the final results). Wrong answers wait for Next. Automatic advancement pauses when the game is paused or the tab is hidden. The answer-button alternative allows play without flying. Mistakes can be practised again at the end.
+The ship wraps around the screen edges. Asteroids drift and rotate within six separate regions so their labels stay readable. There is no time limit or loss of lives. Each question has six answer asteroids. A correct hit immediately advances to the next question (or opens the final results), with no waiting time. Wrong answers wait for Next. The answer-button alternative allows play without flying. Mistakes can be practised again at the end.
 
 Each correct answer earns 100 points plus a streak bonus of 20 per consecutive additional hit, capped at 100 bonus points. Mistakes reset the streak. Reduced-motion settings disable asteroid rotation and hit particles; flight itself remains interactive.
 
