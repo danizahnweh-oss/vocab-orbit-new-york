@@ -17,7 +17,8 @@ Choose a topic and mission length. Every question independently selects a random
 - Down arrow or S: brake.
 - Space: fire. Shots must physically hit an answer asteroid.
 - P: pause or resume. Switching away automatically pauses flight.
-- Touchscreens: hold the flight buttons and tap Fire.
+- Touchscreens: drag the virtual joystick in any direction; push further for more thrust. Release to brake. Hold Fire with the other thumb to keep shooting. The original flight buttons are also available.
+- The joystick resets on release, touch cancellation, pause, resize, a hit and the next question.
 
 The ship wraps around the screen edges. Asteroids drift and rotate within separate regions so their labels stay readable. There is no time limit or loss of lives. Read the feedback after a hit, then select Next. The answer-button alternative allows play without flying. Mistakes can be practised again at the end.
 
