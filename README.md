@@ -31,3 +31,7 @@ Each correct answer earns 100 points plus a streak bonus of 20 per consecutive a
 ## Validation
 
 Browser checks cover English interface labels, all three random type selections, actual thrust and rotation, pause/resume, projectile collision scoring, mistake practice, accessible answer buttons and mobile layout. Desktop and mobile screenshots were visually inspected.
+
+## Hard mode
+
+Use the Hard mode button before or during a mission. When enabled, touching any asteroid returns the ship to its launch position and resets the hit streak. The current question and earned points remain. A brief visible shield prevents repeated collision penalties immediately after respawning. Collision detection follows the visible ship and asteroid outlines. Normal mode still allows flying through asteroids.
